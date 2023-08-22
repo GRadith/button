@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    margin: 15px;
+}
+
+.btj {
+    background-color: #c2c8ff;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 15px;
+    text-align: center;
+    width: 7em;
+    border-radius: 1rem;
+    color: blue;
+    box-shadow: 0 0.4rem #adadad;
+    cursor: pointer;
+}
+
+.btj:active {
+    color: white;
+    box-shadow: 0 0.2rem #adadad;
+    transform: translateY(0.2rem);
+}
+
+.btj:hover:not(:disabled) {
+    background: blue;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.btj:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+.btg{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    background: rgb(92, 92, 100);
+    width: 7em;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(99, 99, 99);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btg:hover, .btg:focus, .btg:active{
+    box-shadow: 0 0 20px rgba(100, 100, 100, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.bta {
+    width: 8em;
+    border: 3px solid green;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bta:hover {
+    background: green;
+    color: white;
+    font-size: 1.5em;
+}
+
+.btu{
+    position: relative;
+    display: inline-block;
+    width: 9em;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: red;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid red;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 0 red;
+}
+
+.btu:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 red;
+}
+
+.btu:active {
+    transform: scale(0.9);
+}
+
+.bto {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: yellow;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bto:hover {
+    box-shadow: 7px 5px 56px -14px orange;
+}
+
+.bto:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px orange;
+}
+
+.bti {
+    width: 45px;
+    height: 45px;
+    background-color: #3b5998;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+    0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+    0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+    transition: all .3s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.bti::before {
+    background-color: transparent;
+    content: "f";
+    font-size: 1.6em;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bti::after {
+    content: "acebook";
+    background-color: transparent;
+    font-size: 0;
+    opacity: 0;
+    font-weight: 700;
+    color: white;
+    z-index: 5;
+    transition: all .3s;
+    transform: translateX(60px);
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bti:hover {
+    width: 160px;
+    border-radius: 30px;
+}
+
+.bti:hover::after {
+    opacity: 1;
+    font-size: 1.6em;
+    transform: translateX(0px);
+}
+
+.bti:hover .shine {
+    transform: translate(-70px ,10px);
+}
+
+.bts {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.534);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.bts:focus,
+.bts:hover {
+    color: black;
+}
+
+.bts:focus:after,
+.bts:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.bts:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.btw {
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.btw:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+};
+
+.btw:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+};
